@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 #import "DLNASDK.h"
-
 @interface ViewController ()
 
 @end
@@ -18,7 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor redColor];
-//    DLNASDK * sd = [[DLNASDK alloc]init];
+
+    DLNASDK * dlna = [[DLNASDK alloc]init];
+    [dlna configure];
+    
 }
 
 

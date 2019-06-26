@@ -1070,7 +1070,6 @@
 			isa = PBXGroup;
 			children = (
 				E45332AE1AAED318004A52FD /* MobileMediaServer */,
-				E45332A81AAED263004A52FD /* MediaServer */,
 				E42D3A940FDC85E70045379C /* MediaConnect */,
 				E42D3A960FDC85E70045379C /* MediaCrawler */,
 				E42D3A9B0FDC85E70045379C /* MicroMediaController */,
@@ -1314,13 +1313,6 @@
 				E41016151ACFA4E0000E994F /* MobileMediaServer */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		E45332A81AAED263004A52FD /* MediaServer */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = MediaServer;
 			sourceTree = "<group>";
 		};
 		E45332AE1AAED318004A52FD /* MobileMediaServer */ = {
@@ -1840,7 +1832,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "build_dir=\"$SRCROOT/../../../Carthage/Build\"\n\n# Only copy when the Carthage/Build directory is a symlink\nif ! [ -L \"$build_dir\" ]; then exit 0; fi\n\nrsync --delete -avL \"$BUILT_PRODUCTS_DIR/$PRODUCT_NAME\"* \"$build_dir/iOS\"";
+			shellScript = "build_dir=\"$SRCROOT/../../../Carthage/Build\"\n\n# Only copy when the Carthage/Build directory is a symlink\nif ! [ -L \"$build_dir\" ]; then exit 0; fi\n\nrsync --delete -avL \"$BUILT_PRODUCTS_DIR/$PRODUCT_NAME\"* \"$build_dir/iOS\"\n";
 		};
 		E4B2A5A51FC8F8F100C891D7 /* Copy Products to Carthage/Build/iOS */ = {
 			isa = PBXShellScriptBuildPhase;

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0940"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E41016201ACFA826000E994F"
-               BuildableName = "Platinum.framework"
-               BlueprintName = "Platinum-iOS"
-               ReferencedContainer = "container:Platinum.xcodeproj">
+               BlueprintIdentifier = "7A6242A722C1B2A8004E4EA9"
+               BuildableName = "ControlPoint.app"
+               BlueprintName = "ControlPoint"
+               ReferencedContainer = "container:ControlPoint.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,11 +29,20 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "7A6242A722C1B2A8004E4EA9"
+            BuildableName = "ControlPoint.app"
+            BlueprintName = "ControlPoint"
+            ReferencedContainer = "container:ControlPoint.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -42,15 +51,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E41016201ACFA826000E994F"
-            BuildableName = "Platinum.framework"
-            BlueprintName = "Platinum-iOS"
-            ReferencedContainer = "container:Platinum.xcodeproj">
+            BlueprintIdentifier = "7A6242A722C1B2A8004E4EA9"
+            BuildableName = "ControlPoint.app"
+            BlueprintName = "ControlPoint"
+            ReferencedContainer = "container:ControlPoint.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -60,15 +70,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E41016201ACFA826000E994F"
-            BuildableName = "Platinum.framework"
-            BlueprintName = "Platinum-iOS"
-            ReferencedContainer = "container:Platinum.xcodeproj">
+            BlueprintIdentifier = "7A6242A722C1B2A8004E4EA9"
+            BuildableName = "ControlPoint.app"
+            BlueprintName = "ControlPoint"
+            ReferencedContainer = "container:ControlPoint.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

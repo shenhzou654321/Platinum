@@ -13,22 +13,20 @@
 		7A6242B522C1B2A9004E4EA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A6242B422C1B2A9004E4EA9 /* Assets.xcassets */; };
 		7A6242B822C1B2A9004E4EA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A6242B622C1B2A9004E4EA9 /* LaunchScreen.storyboard */; };
 		7A6242BB22C1B2A9004E4EA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6242BA22C1B2A9004E4EA9 /* main.m */; };
-		7AE0AD1F22C1B65D00A7A0C2 /* DLNASDK.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7AE0AD1E22C1B65D00A7A0C2 /* DLNASDK.mm */; };
-		7AE0AD2022C1B65D00A7A0C2 /* DLNASDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7AE0AD1D22C1B65D00A7A0C2 /* DLNASDK.h */; };
-		7AE0AD4922C1C0BA00A7A0C2 /* libDLNASDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE0AD1B22C1B65C00A7A0C2 /* libDLNASDK.a */; };
-		7AE0AD5622C1C7B700A7A0C2 /* Platinum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE0AD5522C1C7B700A7A0C2 /* Platinum.framework */; };
-		7AE0AD6222C1CD8800A7A0C2 /* Neptune.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE0AD6122C1CD8800A7A0C2 /* Neptune.framework */; };
+		7AE0ADBE22C20E6D00A7A0C2 /* Neptune.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE0ADBB22C20E6500A7A0C2 /* Neptune.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7AE0ADC122C20E7100A7A0C2 /* Platinum.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE0ADB222C20C0800A7A0C2 /* Platinum.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7AE0ADC222C20E7F00A7A0C2 /* Neptune.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE0ADBB22C20E6500A7A0C2 /* Neptune.framework */; };
+		7AE0ADD022C20F3500A7A0C2 /* DLNASDK.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7AE0ADC622C20F3500A7A0C2 /* DLNASDK.mm */; };
+		7AE0ADD122C20F3500A7A0C2 /* PltUPnPObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7AE0ADC822C20F3500A7A0C2 /* PltUPnPObject.mm */; };
+		7AE0ADD222C20F3500A7A0C2 /* PltMediaServerObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7AE0ADCC22C20F3500A7A0C2 /* PltMediaServerObject.mm */; };
+		7AE0ADD322C20F3500A7A0C2 /* PltDownloader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7AE0ADCD22C20F3500A7A0C2 /* PltDownloader.cpp */; };
+		7AE0ADD622C20F7C00A7A0C2 /* PltLeaks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7AE0ADD422C20F7C00A7A0C2 /* PltLeaks.cpp */; };
+		7AE0ADDF22C2199C00A7A0C2 /* PltMediaInterface.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7AE0ADD822C2199B00A7A0C2 /* PltMediaInterface.mm */; };
+		7AE0ADE022C2199C00A7A0C2 /* PltMicroMediaController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7AE0ADD922C2199B00A7A0C2 /* PltMicroMediaController.mm */; };
+		7AE0ADE122C2199C00A7A0C2 /* EventParamsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE0ADDA22C2199B00A7A0C2 /* EventParamsResponse.m */; };
+		7AE0ADE222C2199C00A7A0C2 /* DeviceInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE0ADDE22C2199C00A7A0C2 /* DeviceInfoModel.m */; };
+		7AE0ADE322C22BE500A7A0C2 /* Platinum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE0ADB222C20C0800A7A0C2 /* Platinum.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		7AE0AD4722C1C07C00A7A0C2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7A6242A022C1B2A8004E4EA9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7AE0AD1A22C1B65C00A7A0C2;
-			remoteInfo = DLNASDK;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		7AE0AD1922C1B65C00A7A0C2 /* CopyFiles */ = {
@@ -37,8 +35,19 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				7AE0AD2022C1B65D00A7A0C2 /* DLNASDK.h in CopyFiles */,
 			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AE0ADBF22C20E6D00A7A0C2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7AE0ADC122C20E7100A7A0C2 /* Platinum.framework in Embed Frameworks */,
+				7AE0ADBE22C20E6D00A7A0C2 /* Neptune.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -55,10 +64,27 @@
 		7A6242B922C1B2A9004E4EA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A6242BA22C1B2A9004E4EA9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7AE0AD1B22C1B65C00A7A0C2 /* libDLNASDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDLNASDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7AE0AD1D22C1B65D00A7A0C2 /* DLNASDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLNASDK.h; sourceTree = "<group>"; };
-		7AE0AD1E22C1B65D00A7A0C2 /* DLNASDK.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DLNASDK.mm; sourceTree = "<group>"; };
-		7AE0AD5522C1C7B700A7A0C2 /* Platinum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Platinum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7AE0AD6122C1CD8800A7A0C2 /* Neptune.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Neptune.framework; path = ../../../Carthage/Build/iOS/Neptune.framework; sourceTree = "<group>"; };
+		7AE0ADB222C20C0800A7A0C2 /* Platinum.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Platinum.framework; sourceTree = "<group>"; };
+		7AE0ADBB22C20E6500A7A0C2 /* Neptune.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Neptune.framework; path = ../../../Carthage/Build/iOS/Neptune.framework; sourceTree = "<group>"; };
+		7AE0ADC522C20F3500A7A0C2 /* DLNASDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLNASDK.h; sourceTree = "<group>"; };
+		7AE0ADC622C20F3500A7A0C2 /* DLNASDK.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DLNASDK.mm; sourceTree = "<group>"; };
+		7AE0ADC722C20F3500A7A0C2 /* PltUPnPObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PltUPnPObject.h; sourceTree = "<group>"; };
+		7AE0ADC822C20F3500A7A0C2 /* PltUPnPObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PltUPnPObject.mm; sourceTree = "<group>"; };
+		7AE0ADC922C20F3500A7A0C2 /* PltDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PltDownloader.h; sourceTree = "<group>"; };
+		7AE0ADCB22C20F3500A7A0C2 /* Neptune.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Neptune.h; sourceTree = "<group>"; };
+		7AE0ADCC22C20F3500A7A0C2 /* PltMediaServerObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PltMediaServerObject.mm; sourceTree = "<group>"; };
+		7AE0ADCD22C20F3500A7A0C2 /* PltDownloader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PltDownloader.cpp; sourceTree = "<group>"; };
+		7AE0ADCE22C20F3500A7A0C2 /* PltMediaServerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PltMediaServerObject.h; sourceTree = "<group>"; };
+		7AE0ADD422C20F7C00A7A0C2 /* PltLeaks.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PltLeaks.cpp; sourceTree = "<group>"; };
+		7AE0ADD522C20F7C00A7A0C2 /* PltLeaks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PltLeaks.h; sourceTree = "<group>"; };
+		7AE0ADD722C2199B00A7A0C2 /* PltMicroMediaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PltMicroMediaController.h; sourceTree = "<group>"; };
+		7AE0ADD822C2199B00A7A0C2 /* PltMediaInterface.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PltMediaInterface.mm; sourceTree = "<group>"; };
+		7AE0ADD922C2199B00A7A0C2 /* PltMicroMediaController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PltMicroMediaController.mm; sourceTree = "<group>"; };
+		7AE0ADDA22C2199B00A7A0C2 /* EventParamsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventParamsResponse.m; sourceTree = "<group>"; };
+		7AE0ADDB22C2199B00A7A0C2 /* EventParamsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventParamsResponse.h; sourceTree = "<group>"; };
+		7AE0ADDC22C2199B00A7A0C2 /* DeviceInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfoModel.h; sourceTree = "<group>"; };
+		7AE0ADDD22C2199C00A7A0C2 /* PltMediaInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PltMediaInterface.h; sourceTree = "<group>"; };
+		7AE0ADDE22C2199C00A7A0C2 /* DeviceInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceInfoModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +92,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AE0AD4922C1C0BA00A7A0C2 /* libDLNASDK.a in Frameworks */,
+				7AE0ADC222C20E7F00A7A0C2 /* Neptune.framework in Frameworks */,
+				7AE0ADE322C22BE500A7A0C2 /* Platinum.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,8 +101,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AE0AD6222C1CD8800A7A0C2 /* Neptune.framework in Frameworks */,
-				7AE0AD5622C1C7B700A7A0C2 /* Platinum.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,10 +129,19 @@
 		7A6242AA22C1B2A8004E4EA9 /* ControlPoint */ = {
 			isa = PBXGroup;
 			children = (
+				7AE0ADC322C20F3500A7A0C2 /* DLNASDK */,
 				7A6242AB22C1B2A8004E4EA9 /* AppDelegate.h */,
 				7A6242AC22C1B2A8004E4EA9 /* AppDelegate.m */,
 				7A6242AE22C1B2A8004E4EA9 /* ViewController.h */,
 				7A6242AF22C1B2A8004E4EA9 /* ViewController.m */,
+				7AE0ADDC22C2199B00A7A0C2 /* DeviceInfoModel.h */,
+				7AE0ADDE22C2199C00A7A0C2 /* DeviceInfoModel.m */,
+				7AE0ADDB22C2199B00A7A0C2 /* EventParamsResponse.h */,
+				7AE0ADDA22C2199B00A7A0C2 /* EventParamsResponse.m */,
+				7AE0ADDD22C2199C00A7A0C2 /* PltMediaInterface.h */,
+				7AE0ADD822C2199B00A7A0C2 /* PltMediaInterface.mm */,
+				7AE0ADD722C2199B00A7A0C2 /* PltMicroMediaController.h */,
+				7AE0ADD922C2199B00A7A0C2 /* PltMicroMediaController.mm */,
 				7A6242B122C1B2A8004E4EA9 /* Main.storyboard */,
 				7A6242B422C1B2A9004E4EA9 /* Assets.xcassets */,
 				7A6242B622C1B2A9004E4EA9 /* LaunchScreen.storyboard */,
@@ -120,8 +154,6 @@
 		7AE0AD1C22C1B65D00A7A0C2 /* DLNASDK */ = {
 			isa = PBXGroup;
 			children = (
-				7AE0AD1D22C1B65D00A7A0C2 /* DLNASDK.h */,
-				7AE0AD1E22C1B65D00A7A0C2 /* DLNASDK.mm */,
 			);
 			path = DLNASDK;
 			sourceTree = "<group>";
@@ -129,11 +161,29 @@
 		7AE0AD2422C1B70600A7A0C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7AE0AD6122C1CD8800A7A0C2 /* Neptune.framework */,
-				7AE0AD5522C1C7B700A7A0C2 /* Platinum.framework */,
+				7AE0ADBB22C20E6500A7A0C2 /* Neptune.framework */,
+				7AE0ADB222C20C0800A7A0C2 /* Platinum.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
+		};
+		7AE0ADC322C20F3500A7A0C2 /* DLNASDK */ = {
+			isa = PBXGroup;
+			children = (
+				7AE0ADD522C20F7C00A7A0C2 /* PltLeaks.h */,
+				7AE0ADD422C20F7C00A7A0C2 /* PltLeaks.cpp */,
+				7AE0ADC722C20F3500A7A0C2 /* PltUPnPObject.h */,
+				7AE0ADC822C20F3500A7A0C2 /* PltUPnPObject.mm */,
+				7AE0ADC922C20F3500A7A0C2 /* PltDownloader.h */,
+				7AE0ADCD22C20F3500A7A0C2 /* PltDownloader.cpp */,
+				7AE0ADCB22C20F3500A7A0C2 /* Neptune.h */,
+				7AE0ADCE22C20F3500A7A0C2 /* PltMediaServerObject.h */,
+				7AE0ADCC22C20F3500A7A0C2 /* PltMediaServerObject.mm */,
+				7AE0ADC522C20F3500A7A0C2 /* DLNASDK.h */,
+				7AE0ADC622C20F3500A7A0C2 /* DLNASDK.mm */,
+			);
+			path = DLNASDK;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -145,11 +195,11 @@
 				7A6242A422C1B2A8004E4EA9 /* Sources */,
 				7A6242A522C1B2A8004E4EA9 /* Frameworks */,
 				7A6242A622C1B2A8004E4EA9 /* Resources */,
+				7AE0ADBF22C20E6D00A7A0C2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7AE0AD4822C1C07C00A7A0C2 /* PBXTargetDependency */,
 			);
 			name = ControlPoint;
 			productName = ControlPoint;
@@ -227,9 +277,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AE0ADE022C2199C00A7A0C2 /* PltMicroMediaController.mm in Sources */,
 				7A6242B022C1B2A8004E4EA9 /* ViewController.m in Sources */,
+				7AE0ADE222C2199C00A7A0C2 /* DeviceInfoModel.m in Sources */,
+				7AE0ADDF22C2199C00A7A0C2 /* PltMediaInterface.mm in Sources */,
+				7AE0ADD322C20F3500A7A0C2 /* PltDownloader.cpp in Sources */,
 				7A6242BB22C1B2A9004E4EA9 /* main.m in Sources */,
+				7AE0ADE122C2199C00A7A0C2 /* EventParamsResponse.m in Sources */,
+				7AE0ADD122C20F3500A7A0C2 /* PltUPnPObject.mm in Sources */,
+				7AE0ADD222C20F3500A7A0C2 /* PltMediaServerObject.mm in Sources */,
+				7AE0ADD022C20F3500A7A0C2 /* DLNASDK.mm in Sources */,
 				7A6242AD22C1B2A8004E4EA9 /* AppDelegate.m in Sources */,
+				7AE0ADD622C20F7C00A7A0C2 /* PltLeaks.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,19 +296,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AE0AD1F22C1B65D00A7A0C2 /* DLNASDK.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		7AE0AD4822C1C07C00A7A0C2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7AE0AD1A22C1B65C00A7A0C2 /* DLNASDK */;
-			targetProxy = 7AE0AD4722C1C07C00A7A0C2 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7A6242B122C1B2A8004E4EA9 /* Main.storyboard */ = {
@@ -387,13 +437,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2FFNFZE3QD;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				HEADER_SEARCH_PATHS = (
+				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/DLNASDK\"",
+					"\"$(SRCROOT)/../../../Carthage/Build/iOS\"",
+					"$(PROJECT_DIR)",
 				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ControlPoint/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -412,13 +464,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2FFNFZE3QD;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				HEADER_SEARCH_PATHS = (
+				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/DLNASDK\"",
+					"\"$(SRCROOT)/../../../Carthage/Build/iOS\"",
+					"$(PROJECT_DIR)",
 				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ControlPoint/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -435,14 +489,20 @@
 		7AE0AD2122C1B65D00A7A0C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../../../Carthage/Build/iOS\"/**",
+					"\"$(SRCROOT)/../../../Carthage/Build/iOS\"",
+					"\"$(SRCROOT)/\"",
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/ControlPoint",
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/DLNASDK\"",
+					"\"$(SRCROOT)/../../../Carthage/Build/iOS\"",
+					"\"$(SRCROOT)/../..\"/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-ObjC";
@@ -455,14 +515,20 @@
 		7AE0AD2222C1B65D00A7A0C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SRCROOT)/../../../Carthage/Build/iOS\"/**",
+					"\"$(SRCROOT)/../../../Carthage/Build/iOS\"",
+					"\"$(SRCROOT)/\"",
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/ControlPoint",
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/DLNASDK\"",
+					"\"$(SRCROOT)/../../../Carthage/Build/iOS\"",
+					"\"$(SRCROOT)/../..\"/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-ObjC";

@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#include <UIKit/UIKit.h>
 
 @interface DLNASDK : NSObject
+
+
+- (void)configure;
 
 @end
